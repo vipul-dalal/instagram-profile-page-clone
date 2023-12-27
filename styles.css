@@ -390,11 +390,11 @@ footer {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     .profile-settings {
         margin-top: 2rem;
     }
-    
+
     header{
         flex-direction: unset;
         margin: 0 70px;
