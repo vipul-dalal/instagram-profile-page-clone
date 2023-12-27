@@ -6,7 +6,7 @@ This repository contains a simple HTML and CSS project that mimics the design of
 
 ## Preview
 
-![Instagram Profile Page Clone]([https://vipul-dalal.github.io/instagram-profile-page-clone/])
+![Instagram Profile Page Clone](https://vipul-dalal.github.io/instagram-profile-page-clone/)
 )
 
 ## Features
