@@ -25,7 +25,7 @@ This repository contains a simple HTML and CSS project that mimics the design of
 1. Clone the repository:
 
    ```bash
-   https://vipul-dalal.github.io/instagram-profile-page-clone/
+   https://github.com/vipul-dalal/instagram-profile-page-clone.git
    ```
 
 2. Open the `index.html` file in your preferred web browser.
