@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: #ffff;
+}
+
+header {
+    display: flex;
+    background-color: #000;
+    padding: 1rem 0;
+    /* text-align: center; */
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.profile-container {
+    max-width: 935px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-outer-circle {
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+}
+
+.profile-inner-circle {
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-inner-circle img {
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+.profile-name h2 {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.profile-edit-btn ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.profile-edit-btn li {
+    margin-right: 20px;
+}
+
+.profile-edit-btn li .common-btn {
+    text-decoration: none;
+    padding: 8px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.profile-edit-btn li .common-btn:hover {
+    background-color: #1c1c1c;
+}
+
+.profile-edit-btn li .f-btn {
+    background-color: #3897f0;
+    transition: .3s ease;
+}
+
+.profile-edit-btn li .f-btn:hover {
+    background-color: #0468c5;
+}
+
+.profile-edit-btn li .bar-btn {
+    background-color: none !important;
+}
+
+.profile-edit-btn li .bar-btn:hover {
+    background-color: none !important;
+}
+
+
+.profile-bio-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-stats ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: -2rem 0;
+}
+
+.profile-stats li {
+    text-align: center;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.profile-stats .common {
+    cursor: pointer;
+}
+
+.profile-stats li span {
+    margin: 0 5px;
+}
+
+.profile-bio {
+    text-wrap: nowrap;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.profile-bio .links {
+    color: #ccc;
+}
+
+.profile-memory-posts {
+    margin: 1.5rem 0 0 -50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-circle {
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.middle-circle {
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+}
+
+.fa-add {
+    font-weight: 200;
+    font-size: 60px;
+}
+
+.outer-circle:hover,
+.middle-circle:hover,
+.fa-add:hover {
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dbdbdb;
+}
+
+.post-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.sepration-line {
+    color: #333 !important;
+}
+
+.post-section li {
+    font-size: 1rem;
+    margin: 0 30px;
+}
+
+.post-section li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.post-section li a i {
+    margin: 0 5px;
+}
+
+.post-section li:nth-child(1) a:visited {
+    color: #fff;
+}
+
+.post-section li a:active,
+.post-section a:focus {
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.post-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.copyrights-section-lists ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.copyrights-section-lists li {
+    margin: 0 10px;
+    width: fit-content;
+}
+
+.copyrights-section-lists a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s ease;
+}
+
+.copyrights-section-lists a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.languages select {
+    padding: 5px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-settings {
+        margin-top: 1rem;
+    }
+
+    .profile-stats ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-stats li {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .profile-bio {
+        text-align: center;
+    }
+
+    .profile-memory-posts {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem 0;
+    }
+
+    .post-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
